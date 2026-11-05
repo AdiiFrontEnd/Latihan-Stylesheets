@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>counter</h1>
+
+    <ul>
+        <li>manggis</li>
+        <li>robuk</li>
+        <li>delima</li>
+        <li>mangga</li>
+        <li>alpukat</li>
+    </ul>
+</body>
+</html>
+<style>
+
+    body {
+        counter-reset: buah;
+    }
+
+    li::before {
+        content: counter(buah);
+        counter-increment: buah;
+        margin-right: 5px;
+    }
+</style>
